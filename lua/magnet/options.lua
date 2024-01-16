@@ -5,6 +5,7 @@ M.default_glob_aliases = {
 	c = "*.css,*.scss",
 	t = "*.ts,!*.spec.ts",
 	s = "*.spec.ts",
+	j = "*.json",
 }
 
 return M
