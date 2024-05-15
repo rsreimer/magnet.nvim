@@ -4,6 +4,14 @@ local Grep = require("magnet.finders.grep")
 
 local M = {}
 
+function M.find_directory(opts)
+	opts = opts or {}
+
+	find_directory(opts, function(dirs)
+		vim.cmd("e " .. dirs)
+	end)
+end
+
 function M.find_text(opts)
 	opts = opts or {}
 
